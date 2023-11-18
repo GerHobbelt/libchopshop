@@ -5,7 +5,7 @@
 - **output** is n-gram / k-mer output vectors`<uint16_t>`/`<uint32_t>`/`<uint64_t>` with optional weight vector`<float>`/`<double>`/`<int>`
   + support variable length n-grams, q-grams, skip-grams, *elasti*-grams, k-grams for arbitrary k
   + character / symbol / codepoint and word + phrase[^1] level tokens (grams)
-  + attributed / augmented n-grams (POS encoding as part of the n-gram; ditto for whole-word/part-of-word/start-,end-of-word markers)
+  + attributed / augmented n-grams (POS encoding as part of the n-gram; ditto for whole-word/part-of-word/start- & end-of-word markers)
   + support weights / ranking -based filtering of the token stream ("*primus inter pares*", only the "*upper crust*" are allowed through into the output vectors)
 - also available as CLI tool, suitable for UNIX-style piped workflows, such as `my_extractor | chopshop | my_fts_db_feeder` command lines. Can be easily called from arbritary language scripts ("external invocation" a.k.a. "execv/system call")
 
